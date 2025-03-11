@@ -45,7 +45,6 @@ class _HomePageState extends State<HomePage> {
   Future<void> checkDailyDataUsage() async {
     if (_permissionGranted == false) return;
     final details = await AppDataUsage.instance.getDailyDataUsageForApp();
-    print('details: ${details.toJson()}');
     if (!details.isSuccess) return; //check details.error for error message
     setState(() {
       rxTotalBytes = details.rxBytes;
@@ -58,7 +57,6 @@ class _HomePageState extends State<HomePage> {
     try {
       final uri = Uri.parse('https://jsonplaceholder.typicode.com/posts');
       await get(uri);
-      print('api called ------');
     } catch (e) {
       debugPrint(e.toString());
     }

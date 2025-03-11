@@ -1,4 +1,4 @@
-## 0.0.1
+## 1.0.0
 
 - Added Query to check usage stats permission
 - Added Query to grant usage stats permission

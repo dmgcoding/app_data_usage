@@ -1,7 +1,9 @@
 name: app_data_usage
 description: "A Flutter plugin to check daily data usage(both wifi and mobile) for the installed app. Only support for android currently as iOS doesn't allow to query this."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/dmgcoding/app_data_usage
+repository: https://github.com/dmgcoding/app_data_usage
+issue_tracker: https://github.com/dmgcoding/app_data_usage/issues
 
 environment:
   sdk: ^3.6.0
